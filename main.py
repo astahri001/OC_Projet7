@@ -22,7 +22,7 @@ class ScroringCredit(BaseModel):
 
 
 # On crée notre pipeline
-model_load = pickle.load(open('banking_model.md', 'rb'))
+model_load = pickle.load(open('model_shap.md', 'rb'))
 data = pd.read_csv('x_train_fastapi.csv', index_col=0)
 best_parameters = {'colsample_by_tree': 0.6000000000000001,
                    'learning_rate': 0.026478707430398492,
